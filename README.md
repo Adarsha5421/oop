@@ -4,55 +4,24 @@ Object-Oriented Programming (OOP) is a programming paradigm based on the concept
 Encapsulation involves bundling data (fields) and methods (functions) that operate on the data into a single unit, typically a class. It restricts direct access to some of the object's components and ensures controlled access through getters and setters.
 
 Purpose: Protect data integrity and hide implementation details.
-Example:
-class Employee {
-  String _name; // Private variable
-  Employee(this._name);
-  String get name => _name; // Getter
-  set name(String newName) => _name = newName; // Setter
-}
+
 
 2. Abstraction
 Abstraction simplifies complex systems by modeling classes appropriate to the system's level of interaction. It hides unnecessary details and shows only essential features.
 
 Purpose: Reduce complexity and increase code clarity.
-Example:
-abstract class Shape {
-  void draw(); // Abstract method
-}
-class Circle extends Shape {
-  @override
-  void draw() => print("Drawing Circle");
-}
+
 
 3. Inheritance
 Inheritance allows a class (child) to inherit properties and methods from another class (parent). It promotes code reuse and establishes a hierarchy between classes.
 
 Purpose: Reuse existing code and establish a relationship between classes.
-Example:
-dart
-Copy code
-class Animal {
-  void eat() => print("Animal eats");
-}
-class Dog extends Animal {
-  void bark() => print("Dog barks");
-}
 
 4. Polymorphism
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. The same method behaves differently based on the object that invokes it.
 
 Purpose: Enable flexibility and dynamic method invocation.
-Example:
-dart
-Copy code
-class Animal {
-  void makeSound() => print("Some sound");
-}
-class Dog extends Animal {
-  @override
-  void makeSound() => print("Bark");
-}
+
 Conclusion:
 Understanding these four pillars of OOP—Encapsulation, Abstraction, Inheritance, and Polymorphism—is crucial for writing clean, modular, and maintainable code. 🚀✨
 
